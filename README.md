@@ -8,4 +8,4 @@ This repository is the official implementation of Analogist.
 > 
 > Zheng Gu, Shiyuan Yang, Jing Liao, Jing Huo, Yang Gao.
 
-The code will coming soon.
+The code will be coming soon.
