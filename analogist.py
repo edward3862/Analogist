@@ -29,18 +29,20 @@ class Analogist():
                                               safety_checker=None,).to(self.device)
         self.model.scheduler = Scheduler.from_config(self.model.scheduler.config)
 
-        # Register attention editor
-        self.attn_editor = AttentionEdit(sac_start_layer=args.sac_start_layer, sac_end_layer=args.sac_end_layer,
-                                    cam_start_layer=args.cam_start_layer, cam_end_layer=args.cam_end_layer,
-                                    scale_sac=args.scale_sac)
-        regiter_attention_editor_diffusers(self.model, self.attn_editor)
-
         self.guidance_scale = args.guidance_scale
         self.neg_prompt = "Messy,Disordered,Chaotic,Cluttered,Haphazard,Unkempt,Scattered,Disheveled,Tangled,Random"
         self.num_images_per_prompt=args.num_images_per_prompt
         self.strength=args.strength
+
+    def regester_attention_editor(self):
+        args = self.args
+        self.attn_editor = AttentionEdit(sac_start_layer=args.sac_start_layer, sac_end_layer=args.sac_end_layer,
+                                    cam_start_layer=args.cam_start_layer, cam_end_layer=args.cam_end_layer,
+                                    scale_sac=args.scale_sac)
+        regiter_attention_editor_diffusers(self.model, self.attn_editor)
     
     def inpaint(self, prompt, image, latents, height, width):
+        self.regester_attention_editor()
         return self.model(prompt,
                           image=image,
                           mask_image=self.mask_image,
