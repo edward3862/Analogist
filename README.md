@@ -103,18 +103,3 @@ We have prepared all the images used for quantitative evaluation in this [link](
 
 We borrow the code of attention control from [Prompt-to-Prompt](https://prompt-to-prompt.github.io/) and [MasaCtrl](https://ljzycmd.github.io/projects/MasaCtrl/).
 
-
-## Citation
-
-``` bibtex
-@article{gu2024analogist,
-  title = {Analogist: Out-of-the-box Visual In-Context Learning with Image Diffusion Model},
-  author = {Gu, Zheng and Yang, Shiyuan and Liao, Jing and Huo, Jing and Gao, Yang},
-  journal = {ACM Transactions on Graphics (TOG)},
-  volume={43},
-  number={4},
-  pages={1--14},
-  year={2024},
-  publisher={ACM New York, NY}
-}
-```
