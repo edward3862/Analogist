@@ -91,7 +91,7 @@ if __name__ == "__main__":
     image_pasted = Image.open(image_fn).resize((width,height))
     image_pasted.paste(B, (width//2,height//2))
     
-    # Prepare noise x_T
+    # Prepare noise
     shape = (args.num_images_per_prompt, 4, height//8, width//8)
     latents = randn_tensor(shape, generator=analogist.generator, dtype=torch.float16, device=analogist.device)
 
