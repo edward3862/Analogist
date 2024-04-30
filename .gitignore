@@ -1,0 +1,33 @@
+# Ignore compiled files
+*.class
+*.jar
+*.war
+*.ear
+
+# Ignore build output directories
+/target/
+/build/
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore dependencies and package managers
+/node_modules/
+/vendor/
+
+# Ignore cache files
+cache/
+__pycache__/
+
+datasets/
+output/
+tmp*
