@@ -29,5 +29,6 @@ cache/
 __pycache__/
 
 datasets/
-output/
+results/
 tmp*
+*.sh

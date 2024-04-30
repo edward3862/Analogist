@@ -149,3 +149,12 @@ def img2imgs(fn, w=512, h=512):
         grid.paste(imgi, (w//2, h//2))
         imgs.append(grid)
     return imgs
+
+
+def prepare_output_dir(output_dir):
+    os.makedirs(output_dir, exist_ok=True)
+    sample_count = len([item for item in os.listdir(output_dir) if item.startswith("sample_")])
+    cur_output_dir = os.path.join(output_dir, f"sample_{sample_count}")
+    os.makedirs(cur_output_dir, exist_ok=True)
+    # os.system(f"cp {__file__} {cur_output_dir}")
+    return cur_output_dir

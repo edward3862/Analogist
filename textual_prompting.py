@@ -63,8 +63,8 @@ def postprocess_gpt4_response(response, sep=","):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Textual Prompting')
-    parser.add_argument('--image_path', type=str, default="data/colorization_processed/input_marked.png")
-    parser.add_argument('--output_prompt_file', type=str, default="data/colorization_processed/prompts.txt")
+    parser.add_argument('--image_path', type=str, default="example/colorization_processed/input_marked.png")
+    parser.add_argument('--output_prompt_file', type=str, default="example/colorization_processed/prompts.txt")
     args = parser.parse_args()
     
     prompt = "Please help me with the image analogy task: take an image A and its transformation A', and provide any image B to produce an output B' that is analogous to A'. Or, more succinctly: A : A' :: B : B'. You should give me three most possible text prompts of image B', each prompt should contain no more than 5 words. Please separate the prompts with comma and format your answer as follows: prompt1, prompt2, prompt3"

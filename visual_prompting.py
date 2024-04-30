@@ -94,10 +94,10 @@ def prepare_grid_images(img_A, img_Ap, img_B, res, output_dir):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Visual Prompting')
-    parser.add_argument('--img_A', type=str, default="data/caricature_raw/001.png")
-    parser.add_argument('--img_Ap', type=str, default="data/caricature_raw/002.png")
-    parser.add_argument('--img_B', type=str, default="data/caricature_raw/003.png")
-    parser.add_argument('--output_dir', type=str, default="data/caricature_processed")
+    parser.add_argument('--img_A', type=str, default="example/caricature_raw/001.png")
+    parser.add_argument('--img_Ap', type=str, default="example/caricature_raw/002.png")
+    parser.add_argument('--img_B', type=str, default="example/caricature_raw/003.png")
+    parser.add_argument('--output_dir', type=str, default="example/caricature_processed")
     parser.add_argument('--res', type=int, default=512)
     args = parser.parse_args()
 

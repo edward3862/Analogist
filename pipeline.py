@@ -4,8 +4,7 @@ from typing import Any, Callable, Dict, List, Optional, Union
 import PIL
 import torch
 import numpy as np
-from torch.nn import functional as F
-from diffusers import AsymmetricAutoencoderKL, StableDiffusionInpaintPipeline, UNet2DConditionModel
+from diffusers import AsymmetricAutoencoderKL, StableDiffusionInpaintPipeline
 from diffusers.pipelines.stable_diffusion import StableDiffusionPipelineOutput
 from diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion_inpaint import prepare_mask_and_masked_image
 from diffusers.utils import deprecate
