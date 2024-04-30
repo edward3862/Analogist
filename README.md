@@ -7,6 +7,8 @@ This repository is the official implementation of Analogist.
 > **Analogist: Out-of-the-box Visual In-Context Learning with Image Diffusion Model.**
 > 
 > Zheng Gu, Shiyuan Yang, Jing Liao, Jing Huo, Yang Gao.
+>
+>Visual In-Context Learning (ICL) has emerged as a promising research area due to its capability to accomplish various tasks with limited example pairs through analogical reasoning. However, training-based visual ICL has limitations in its ability to generalize to unseen tasks and requires the collection of a diverse task dataset. On the other hand, existing methods in the inference-based visual ICL category solely rely on textual prompts, which fail to capture fine-grained contextual information from given examples and can be time-consuming when converting from images to text prompts. To address these challenges, we propose Analogist, a novel inference-based visual ICL approach that exploits both visual and textual prompting techniques using a text-to-image diffusion model pretrained for image inpainting. For visual prompting, we propose a self-attention cloning (SAC) method to guide the fine-grained structural-level analogy between image examples. For textual prompting, we leverage GPT-4V's visual reasoning capability to efficiently generate text prompts and introduce a cross-attention masking (CAM) operation to enhance the accuracy of semantic-level analogy guided by text prompts. Our method is out-of-the-box and does not require fine-tuning or optimization. It is also generic and flexible, enabling a wide range of visual tasks to be performed in an in-context manner. Extensive experiments demonstrate the superiority of our method over existing approaches, both qualitatively and quantitatively.
 
 
 ## Set Up
@@ -44,7 +46,7 @@ This will generate two images under the `output_dir` folder:
 
 ### Textual Prompting
 
-It is recommended for users to obtain an available OpenAI API and adding it into your environment:
+It is recommended to obtain an available OpenAI API and adding it into your environment:
 
 ```bash
 export OPENAI_API_KEY="your-api-key-here"
@@ -81,7 +83,7 @@ python analogist.py \
     --output_dir results/example/colorization
 ```
 
-Here is another example of translating a photo into caricature.
+Here is another example of translating a photo into a caricature. Note that we use the same value of hyper-parameters in the quantitative evaluation. However, it is recommended to try different combinations in specific cases for better results.
 
 ```bash
 python analogist.py \
@@ -93,6 +95,25 @@ python analogist.py \
     --cam_start_layer 4 --cam_end_layer 9 \
     --strength 0.96 --scale_sac 1.3 --guidance_scale 15
 ```
+
+## Datasets
+
+All the image datasets can be achieved through this [link](https://portland-my.sharepoint.com/:f:/g/personal/zhenggu4-c_my_cityu_edu_hk/Eh_jT6A5s6VHo7Q4GiDAKY4BjqQ3_f9MJ89qdsIEbe_K2g?e=kJY6HB). Please put them in a `datasets` folder. We also provide the GPT-4V prompts that we used in our experiments. Please see the `*_gpt4_out.txt` files.
+
+```
+Analogist
+├── datasets
+│   ├── low_level_tasks_processed
+│   │  ├── ... 
+│   │  ├── *_gpt4_out.txt
+│   ├── manipulation_tasks_processed
+│   │  ├── ...
+│   │  ├── *_gpt4_out.txt
+│   ├── vision_tasks_processed
+│   │  ├── ...
+│   │  ├── *_gpt4_out.txt
+```
+
 
 ## More Applications
 
@@ -108,7 +129,7 @@ python visual_prompting.py \
     --output_dir example/corgi_processed
 ```
 
-The other things are the same. Note that we use the same value of hyper-parameters in the quantitative evaluation. However, it is recommended to try different combinations in specific cases for better results.
+The other things are the same.
 
 ```bash
 python analogist.py \
