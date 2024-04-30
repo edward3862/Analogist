@@ -172,10 +172,13 @@ class InpaintingPipeline(StableDiffusionInpaintPipeline):
         # 1. Check inputs
         self.check_inputs(
             prompt,
+            image,
+            mask_image,
             height,
             width,
             strength,
             callback_steps,
+            output_type,
             negative_prompt=negative_prompt,
             prompt_embeds=prompt_embeds,
             negative_prompt_embeds=negative_prompt_embeds,
