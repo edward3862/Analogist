@@ -52,7 +52,7 @@ It is recommended to obtain an available OpenAI API and adding it into your envi
 export OPENAI_API_KEY="your-api-key-here"
 ```
 
-Or you can add it directly in `gpt4_prompting.py`:
+Or you can add it directly in `textual_prompting.py`:
 
 ```python
 api_key = os.environ.get('OPENAI_API_KEY', "your-api-key-here")
