@@ -146,3 +146,16 @@ python analogist.py \
 
 We borrow the code of attention control from [Prompt-to-Prompt](https://prompt-to-prompt.github.io/) and [MasaCtrl](https://ljzycmd.github.io/projects/MasaCtrl/).
 
+
+## Citation
+
+If you find our code or paper helps, please consider citing:
+
+```bibtex
+@article{gu2024analogist,
+ title={Analogist: Out-of-the-box Visual In-Context Learning with Image Diffusion Model},
+ author={GU, Zheng and Yang, Shiyuan and Liao, Jing and Huo, Jing and Gao, Yang},
+ journal={ACM Transactions on Graphics (TOG)},
+ year={2024},
+}
+```
