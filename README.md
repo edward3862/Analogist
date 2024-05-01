@@ -142,6 +142,18 @@ python analogist.py \
     --strength 0.8 --scale_sac 1.3 --guidance_scale 15
 ```
 
+## Related Papers
+
+You may be interested in the following related papers:
+
+- Diffusion Image Analogies ([code](https://github.com/subrtadel/DIA))
+- Visual Prompting via Image Inpainting ([project page](https://yossigandelsman.github.io/visual_prompt/))
+- Images Speak in Images: A Generalist Painter for In-Context Visual Learning ([project page](https://github.com/baaivision/Painter))
+- In-Context Learning Unlocked for Diffusion Models ([project page](https://zhendong-wang.github.io/prompt-diffusion.github.io/))
+- Visual Instruction Inversion: Image Editing via Visual Prompting ([project page](https://thaoshibe.github.io/visii/))
+- Sequential Modeling Enables Scalable Learning for Large Vision Models ([project page](https://yutongbai.com/lvm.html))
+
+
 ## Acknowledgement
 
 We borrow the code of attention control from [Prompt-to-Prompt](https://prompt-to-prompt.github.io/) and [MasaCtrl](https://ljzycmd.github.io/projects/MasaCtrl/).
