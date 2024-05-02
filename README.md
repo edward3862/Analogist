@@ -1,5 +1,8 @@
 # Analogist (SIGGRAPH 2024)
 
+![Static Badge](https://img.shields.io/badge/Project-Analogist-blue?link=analogist2d.github.io)
+
+
 This repository is the official implementation of Analogist.
 
 ![framework](assets/images/teaser.jpg)
