@@ -83,6 +83,9 @@ python analogist.py \
     --output_dir results/example/colorization
 ```
 
+![colorization](assets/images/colorization.jpg)
+
+
 Here is another example of translating a photo into a caricature. Note that we use the same value of hyper-parameters in the quantitative evaluation. However, it is recommended to try different combinations in specific cases for better results.
 
 ```bash
@@ -95,6 +98,8 @@ python analogist.py \
     --cam_start_layer 4 --cam_end_layer 9 \
     --strength 0.96 --scale_sac 1.3 --guidance_scale 15
 ```
+
+![caricature](assets/images/caricature.jpg)
 
 ## Datasets
 
@@ -155,6 +160,8 @@ python analogist.py \
     --cam_start_layer 4 --cam_end_layer 8 \
     --strength 0.8 --scale_sac 1.3 --guidance_scale 15
 ```
+
+![corgi](assets/images/corgi.jpg)
 
 ## Related Papers
 
