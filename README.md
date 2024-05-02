@@ -114,6 +114,20 @@ Analogist
 │   │  ├── *_gpt4_out.txt
 ```
 
+## Evaluation
+
+Run the following script to run Analogist for these tasks.
+
+```bash
+bash evaluation.sh
+```
+
+
+We calculate the CLIP direction similarity to evaluate how faithfully the transformations provided by the model adhere to the transformations contained in the given examples.
+
+```bash
+python calc_clip_sim.py
+```
 
 ## More Applications
 

@@ -31,4 +31,3 @@ __pycache__/
 datasets/
 results/
 tmp*
-*.sh
