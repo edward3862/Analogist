@@ -177,7 +177,7 @@ You may be interested in the following related papers:
 - Images Speak in Images: A Generalist Painter for In-Context Visual Learning ([project page](https://github.com/baaivision/Painter))
 - In-Context Learning Unlocked for Diffusion Models ([project page](https://zhendong-wang.github.io/prompt-diffusion.github.io/))
 - Visual Instruction Inversion: Image Editing via Visual Prompting ([project page](https://thaoshibe.github.io/visii/))
-- Sequential Modeling Enables Scalable Learning for Large Vision Models ([project page](https://yutongbai.com/lvm.html))
+- Context Diffusion: In-Context Aware Image Generation ([project page](https://ivonajdenkoska.github.io/contextdiffusion/main.html))
 
 
 ## Acknowledgement
