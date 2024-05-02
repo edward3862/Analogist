@@ -106,7 +106,9 @@ python analogist.py \
 
 ## Datasets
 
-All the image datasets can be achieved through this [link](https://portland-my.sharepoint.com/:f:/g/personal/zhenggu4-c_my_cityu_edu_hk/Eh_jT6A5s6VHo7Q4GiDAKY4BjqQ3_f9MJ89qdsIEbe_K2g?e=kJY6HB). Please put them in a `datasets` folder. We also provide the GPT-4V prompts that we used in our experiments. Please see the `*_gpt4_out.txt` files.
+You can achieve the datasets by [huggingface](https://huggingface.co/datasets/picana/Analogist) or [onedrive](https://portland-my.sharepoint.com/:f:/g/personal/zhenggu4-c_my_cityu_edu_hk/Eh_jT6A5s6VHo7Q4GiDAKY4BjqQ3_f9MJ89qdsIEbe_K2g?e=kJY6HB).
+
+Please put the datasets in a `datasets` folder. We also provide the GPT-4V prompts that we used in our experiments. Please see the `*_gpt4_out.txt` files.
 
 ```
 Analogist
