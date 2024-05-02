@@ -43,7 +43,7 @@ class AnalogistAttentionEdit(AttentionBase):
                   scale_sac=1.0,
                   step_idx=None):
         super().__init__()
-        with open("index_sa.pkl", "rb") as f:
+        with open("assets/index_sa.pkl", "rb") as f:
             self.index_sa = pickle.load(f)
         self.sa_layer_idx = sac_layer_idx if sac_layer_idx is not None else list(range(sac_start_layer, sac_end_layer))
         self.ca_layer_idx = cam_layer_idx if cam_layer_idx is not None else list(range(cam_start_layer, cam_end_layer))

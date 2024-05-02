@@ -5,10 +5,10 @@ import numpy as np
 from PIL import Image
 from diffusers.utils.torch_utils import randn_tensor
 
-from pipeline import InpaintingPipeline as Pipeline
-from scheduling_ddim import DDIMScheduler as Scheduler
-from attn_utils import AnalogistAttentionEdit as AttentionEdit
-from attn_utils import regiter_attention_editor_diffusers
+from models.pipeline import InpaintingPipeline as Pipeline
+from models.scheduling_ddim import DDIMScheduler as Scheduler
+from models.attn_utils import AnalogistAttentionEdit as AttentionEdit
+from models.attn_utils import regiter_attention_editor_diffusers
 from utils import seed_everything, prepare_output_dir
 
 
@@ -17,7 +17,7 @@ class Analogist():
         self.args = args
         seed_everything(args.seed)
         
-        self.mask_image_fn = "mask_image_inpainting.png"
+        self.mask_image_fn = "assets/mask_image_inpainting.png"
         self.mask_image = Image.open(self.mask_image_fn)
 
         self.device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
