@@ -5,4 +5,4 @@ opencv_python_headless==4.5.5.64
 Pillow==9.4.0
 Requests==2.31.0
 torch==2.0.1
-transformers==4.34.1
+transformers==4.44.2
